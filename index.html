@@ -3,43 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for Jolly Milimo Lwiindi - Web Developer and Computer Science Student">
+    <title>Jolly Milimo Lwiindi - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!--
-    ============================================================
-    ASSIGNMENT 1: RESPONSIVE PORTFOLIO WEBSITE
-    CSC4035 Web Programming and Technologies
-
-    Instructions:
-    1. Complete all TODO sections below
-    2. Use semantic HTML5 elements
-    3. Ensure all images have alt attributes
-    4. Ensure all form inputs have labels
-    5. Test responsiveness at multiple breakpoints
-    ============================================================
-    -->
-
     <!-- Navigation -->
     <header class="header">
         <nav class="nav">
-            <!-- TODO: Create navigation with links to each section
-                 Requirements:
-                 - Logo/site title
-                 - Navigation links (Home, About, Projects, Contact)
-                 - Mobile-friendly (hamburger menu optional)
-                 - Active state indication
-            -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">Jolly Milimo Lwiindi</a>
             </div>
             <ul class="nav__menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,18 +27,10 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <!-- TODO: Create hero section
-                 Requirements:
-                 - Your name (h1)
-                 - Professional tagline
-                 - Call-to-action button
-                 - Consider using Flexbox for layout
-            -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>Jolly Milimo Lwiindi</h1>
                 <p class="hero__tagline">
-                    <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Web Developer | Computer Science Student | Problem Solver
                 </p>
                 <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
@@ -66,43 +38,65 @@
 
         <!-- About Section -->
         <section id="about" class="about">
-            <!-- TODO: Create about section
-                 Requirements:
-                 - Section heading (h2)
-                 - Profile image with alt text
-                 - Professional bio (150+ words)
-                 - Skills list
-                 - Use CSS Grid or Flexbox for layout
-            -->
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about__content">
                     <div class="about__image">
-                        <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="Screenshot_20250912-124615.jpg" alt="Profile photo of Jolly Milimo Lwiindi, Web Developer from Lusaka, Zambia" class="profile-image">
                     </div>
                     <div class="about__text">
                         <p>
-                            <!-- TODO: Write your professional bio (150+ words)
-                                 Include:
-                                 - Your background
-                                 - Your interests in web development
-                                 - Your goals
-                                 - What makes you unique
-                            -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            I'm a web developer based in Lusaka, Zambia, with about three years of hands-on coding experience. 
+                            My journey into development started out of curiosity and quickly grew into a passion I haven't looked 
+                            back from. I'm currently pursuing a degree in Computer Science at the University of Zambia, where I've 
+                            built a strong foundation in software development, problem-solving, and core programming principles. 
+                            I'm also majoring in Networking and Information Security, which has sharpened my understanding of 
+                            secure and scalable systems.
                         </p>
-                        <h3>Skills</h3>
-                        <ul class="skills-list">
-                            <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                            <!-- Add more skills -->
-                        </ul>
+                        <p>
+                            What I enjoy most about development is turning ideas and challenges into clean, functional, and 
+                            user-friendly solutions. I'm comfortable working with HTML, CSS, JavaScript, and modern frameworks, 
+                            and I'm always eager to learn new tools and best practices to improve my craft. I value writing 
+                            clean code, paying attention to detail, and building products that provide real value to users.
+                        </p>
+                        <p>
+                            Outside of coding and academics, I enjoy playing football, watching movies, and spending quality 
+                            time with family and friends. These moments help me stay balanced, motivated, and inspired—both 
+                            in life and in my work.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <h3>HTML5</h3>
+                        <p>Semantic markup, accessibility, SEO-friendly structure</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, animations, custom properties, responsive design</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>ES6+, DOM manipulation, asynchronous programming</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach, cross-browser compatibility</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git & GitHub</h3>
+                        <p>Version control, collaboration, open-source contributions</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Problem Solving</h3>
+                        <p>Algorithms, debugging, logical thinking</p>
                     </div>
                 </div>
             </div>
@@ -110,25 +104,17 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <!-- TODO: Create projects section
-                 Requirements:
-                 - Section heading (h2)
-                 - Minimum 3 project cards
-                 - Each card: image, title, description, link(s)
-                 - Use CSS Grid for card layout
-            -->
             <div class="container">
                 <h2>My Projects</h2>
                 <div class="projects__grid">
                     <!-- Project Card 1 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="quizapp.png" alt="Screenshot of Quiz App - A responsive quiz application with instant feedback">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>Quiz App</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive quiz application built with HTML, CSS, and JavaScript. Users can test their 
+                                knowledge on various topics with instant feedback and score tracking.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -139,13 +125,12 @@
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="Library-Management-System.jpg" alt="Screenshot of School Library Management System - Interactive library resource manager">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>School Library Management System</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                An interactive system for managing library resources and student access. Includes features 
+                                for checking out books, tracking due dates, and managing inventory with a clean interface.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -154,15 +139,14 @@
                         </div>
                     </article>
 
-                    <!-- Project Card 3 -->
+                    <!-- Project Card 3 (Adding a third project as required) -->
                     <article class="project-card">
-                        <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="Portfolio-Website.png" alt="Screenshot of Portfolio Website - Responsive personal portfolio">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>Personal Portfolio Website</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A responsive portfolio website showcasing my skills and projects. Built with HTML5, CSS3, 
+                                using Flexbox and Grid for layouts, with a mobile-first approach.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -170,91 +154,85 @@
                             </div>
                         </div>
                     </article>
-
-                    <!-- TODO: Add more project cards if desired -->
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <!-- TODO: Create contact section
-                 Requirements:
-                 - Section heading (h2)
-                 - Contact form with:
-                   - Name field (required)
-                   - Email field (required, type="email")
-                   - Message textarea (required)
-                   - Submit button
-                 - All inputs must have associated labels
-                 - Use HTML5 validation attributes
-            -->
             <div class="container">
                 <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <h3>Get in Touch</h3>
+                        <p><strong>📧 Email:</strong> lwiindijollymilimo@gmail.com</p>
+                        <p><strong>📞 Phone:</strong> +260 971043453</p>
+                        <p><strong>📍 Location:</strong> Lusaka, Zambia</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
+                    
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Your Name"
+                                minlength="2"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="5"
+                                placeholder="Your message..."
+                                minlength="10"
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <!-- TODO: Create footer
-             Requirements:
-             - Copyright notice
-             - Social media links (optional)
-             - Back to top link (optional)
-        -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2026 Jolly Milimo Lwiindi. All rights reserved.</p>
             <nav class="footer__social">
-                <!-- TODO: Add your social media links -->
                 <a href="#" aria-label="GitHub">GitHub</a>
                 <a href="#" aria-label="LinkedIn">LinkedIn</a>
                 <a href="#" aria-label="Twitter">Twitter</a>
             </nav>
+            <a href="#home" class="back-to-top">Back to Top ↑</a>
         </div>
     </footer>
 </body>
